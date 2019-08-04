@@ -1,11 +1,11 @@
 #language: es
 
-Característica: Abrir una cuenta de ahorros en plan básico a un cliente nuevo
-  Como asesor de una sucursal Bancolombia
-   Quiero realizar la apertura de una cuenta de ahorros a un cliente nuevo
-   Para que el cliente pueda utilizarla
+Característica: Cargar datos de un archivo excel a un archivo feature
+  Como programador
+   Quiero refactorizar la carga de datos de excel a un feature
+   Para reducir la deuda tecnica reportada por Sonar
 
-  Esquema del escenario: vincular un cliente nuevo y aperturar una cuenta de ahorros en plan básico
+  Esquema del escenario: realizar la carga de datos de excel hacia el feature
     Dado realiza el ingreso del cliente
       | <clientType> | <idType> | <idNumber> | <nombre> | <apellido> |
 
