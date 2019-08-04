@@ -1,25 +1,568 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="D:/dat-bc/BANCOLOMBIA/AUTOMATIZACIONES/CleanCode/taller-clean-code" value="PREVIEW" />
-        <entry key="D:/dat-bc/BANCOLOMBIA/AUTOMATIZACIONES/SUCURSALES/AW1177001_SUC_Test/AperturaCuentasAhorros" value="PREVIEW" />
-        <entry key="D:/dat-bc/BANCOLOMBIA/AUTOMATIZACIONES/SUCURSALES/AW1177001_SUC_Test/Apertura_Cuentas_Ahorros" value="PREVIEW" />
-        <entry key="D:/dat-bc/BANCOLOMBIA/AUTOMATIZACIONES/SUCURSALES/AW1177001_SUC_Test/Apertura_Cuentas_Ahorros_Manual" value="PREVIEW" />
-        <entry key="D:/dat-bc/BANCOLOMBIA/AUTOMATIZACIONES/SUCURSALES/AW1177001_SUC_Test/Apertura_Cuentas_Ahorros_POM" value="PREVIEW" />
-        <entry key="D:/dat-bc/BANCOLOMBIA/AUTOMATIZACIONES/SUCURSALES/AW1177001_SUC_Test/ManualTest" value="PREVIEW" />
-        <entry key="D:/dat-bc/BANCOLOMBIA/AUTOMATIZACIONES/SVE/AW0360001_SVE_TEST/PruebasAutomatizadas" value="PREVIEW" />
-        <entry key="D:/dat-bc/BANCOLOMBIA/AUTOMATIZACIONES/TARJETA-CREDITO/AW0937001_VTDPreaprobadoTarjetaDeCredito_Test/OfertareducidaTDC" value="PREVIEW" />
-        <entry key="D:/dat-bc/BANCOLOMBIA/AUTOMATIZACIONES/TARJETA-CREDITO/PreaprobadoTDC" value="PREVIEW" />
-      </map>
+  <component name="ChangeListManager">
+    <list default="true" id="ae3e7274-009a-4815-a202-baceef0a5d4f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Archivos/Notas-VISIONR.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/CAPACITACION TECNICO_FUNCIONAL DEPOSITOS/CAPACITACION DEPÓSITOS A LA VISTA.PPTX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/CAPACITACION TECNICO_FUNCIONAL DEPOSITOS/Depositos - 01. Presentacion.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/CAPACITACION TECNICO_FUNCIONAL DEPOSITOS/Depositos - 02. Archivos.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/CAPACITACION TECNICO_FUNCIONAL DEPOSITOS/Depositos - 03. Transacciones.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/CAPACITACION TECNICO_FUNCIONAL DEPOSITOS/Depositos - 04. Cierre.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/CAPACITACION TECNICO_FUNCIONAL DEPOSITOS/Depositos - 05. GMF.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/CAPACITACION TECNICO_FUNCIONAL DEPOSITOS/Depositos - 06. Cargos x Servicio.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/CAPACITACION TECNICO_FUNCIONAL DEPOSITOS/Depositos - 07. Intereses.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/CAPACITACION TECNICO_FUNCIONAL DEPOSITOS/Depositos - 99. Servicios DEP.PPTX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/CAPACITACION TECNICO_FUNCIONAL DEPOSITOS/Examen Capacitación Depósitos.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/CAPACITACION TECNICO_FUNCIONAL DEPOSITOS/~$CAPACITACION DEPÓSITOS A LA VISTA.PPTX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Cambio de Estado/Diseño Técnico/DTD Servicio_CambioEstado- pasivos V2_0.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Cambio de Estado/Diseño Técnico/DTD Servicio_CambioEstado- pasivos V2_1.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Cambio de plan/Diseño Técnico/Diseño - Acción STI Cambio de Plan Banca Digital.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Cambio de plan/Pruebas/CAMBIO DE PLAN.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Cambio de plan/Pruebas/CambioPlan.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Cambio de plan/Pruebas/EJECUTAR PROCESO CAMBIO PLAN SOMETIDO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Cambio de plan/Pruebas/Parametros simulador CambioPlan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Cambio de plan/Pruebas/planes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Checklist Apoyo a pruebas Servicios Depósitos.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Consultar_BD.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Copy of TRAMAS OAUTH.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/DEPDC20055.HTM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Diseño Técnico/03. DTD T8050 Apertura de  cuenta - pasivos V1.0.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Diseño Técnico/DTD Componente_Consultar_Plan_Pension_y_Nómina - pasivos V1_0.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Diseño Técnico/DTD Servidor DC2-Transacción 0055 Apertura de Cuenta - pasivos V2_0.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Diseño Técnico/DTD Servidor DT2-Transacción 0055 Apertura de  cuenta Listas de Control pasivos V3_0.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Diseño Técnico/DTD Servidor DT2-Transacción 0055 Apertura de  cuenta Listas de Control pasivos V4_0.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas Especializadas/Calculo de concurrencia PMO27286_3Sprint45.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas Especializadas/LCPEPMO27286_3_Sprint45.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas Especializadas/LCPEPMO27286_3_Sprint45_JornadaDeAhorrosTarjetaDebito_DesacopleAperturaCuenta.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas/ALCANCE Transacción 8050 Apertura de Cuenta Servidor DT2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas/ALCANCE Transacción 8050 Apertura de Cuenta.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas/Consumir 0055 DT2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas/Data-Trx0055.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas/Estrategia de pruebas - Apertura de Cuenta.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas/Fallo componente tiempo real tipo cuenta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas/Notas DT2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas/Notas de Pruebas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas/Parametros Consumir Desacople.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas/Parametros de entrada.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/Pruebas/parametros acción 0040.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Desacople Apertura de Cuenta/permisos objetos.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Diseño Técnico/ACCIÓN - Listar Cuentas Depositos.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Diseño Técnico/EstructuraPlana_STI_ListarCuentasDepositos.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Diseño Técnico/Relación de componentes - Listar Cuentas.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Alcance y estrategia de pruebas.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Consultar_BD.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Consumo Transacción - Longitud de trama.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Consumo Transacción.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/DataDriven-Trx 0062.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Ejecutadas/Cliente sin cuentas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Ejecutadas/Indicador de Titularidad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Ejecutadas/Solicitud 41 ctas 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Ejecutadas/Solicitud 41 ctas 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Ejecutadas/Solicitud 41 ctas 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Ejecutadas/Solicitud 41 ctas 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Ejecutadas/Solicitud 41 ctas 5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Ejecutadas/Solicitud 41 ctas 6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Ejecutadas/Solicitud 41 ctas 7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Ejecutadas/Solicitud 41 ctas 8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Estructura QC.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/Listar Cuentas Depositos/Pruebas/Parametros consumo servicio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/MarcaciónGMF/DiseñoTécnico/DTD Servicio_MarcacionGMF- pasivos V2_0.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Funcionalidades/MarcaciónGMF/DiseñoTécnico/DTD Servicio_MarcacionGMF- pasivos V2_1.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/Manual Paso a Paso Cierre de Depósitos V2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/~$CambioPlan.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DEPOSITOS/~$seño - Acción STI Cambio de Plan Banca Digital.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Automatizaciones Java/Guía para documentar pruebas automatizadas con Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/BDD 1 - Primeros Pasos.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/BDD 2 - Mi primera historia de usuario.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/BDD 3 - Implementando Pasos y Objetos.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/BDD 4 - Implementando Pasos y Objetos II (v2).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/BDD 5 - Implementando Pasos y Objetos III.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/BDD 6 - Trabajar con bases de datos DB2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/BDD 7 - Usando MyExtra.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/BDD 8 - Control de Versiones Git, Bitbucket (1).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Comandos Gradle - Reporte.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Foco Automatización/Comandos Gradle - Reporte.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Elkin Rendon_EvidenciaTallerAutomatizacion/CanonFinanciero.feature.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Elkin Rendon_EvidenciaTallerAutomatizacion/CanonFinancieroDefinition.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Elkin Rendon_EvidenciaTallerAutomatizacion/CanonFinancieroFormPage.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Elkin Rendon_EvidenciaTallerAutomatizacion/CanonFinancieroNavigationPage.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Elkin Rendon_EvidenciaTallerAutomatizacion/CanonFinancieroSteps.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/ExamenPreparacion.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/ExamenPreparacion/AutomationDemoSiteDefinition.java.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/ExamenPreparacion/AutomationDemoSitePage.java.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/ExamenPreparacion/AutomationDemoSiteSteps.java.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/ExamenPreparacion/AutomationRegistro.feature.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/ExamenPreparacion/RunnerAutoDemoSite.java.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Lineamientos Bancolombia.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/BDD Reto 10_01 - Automatizacion Web.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/BDD Reto 10_03 - Automatizacion Web.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/BDD Reto 6_00 - Automatizacion Web.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/BDD Reto 7_00 - Automatizacion Web.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/BDD Reto 8_00 - Automatizacion Web.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/BDD Reto 9_00 - Automatizacion Web.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/RetoAutomatización_007.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_007/HerokuappDefinition.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_007/HerokuappJsAlertsPage.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_007/HerokuappSteps.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_007/JavaScriptAlerts.feature.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_008.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_008/CrmZoho.feature.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_008/CrmZohoCrearTareaPage.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_008/CrmZohoDefinition.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_008/CrmZohoPage.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_008/CrmZohoSteps.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_008/RunnerZoho.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_009.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_009/ConsultarBancos.feature.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_009/EvidenceURLbancos.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_009/ExcelWrite.java.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_009/PagsAmarillasDefinition.java.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_009/PagsAmarillasPage.java.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_009/PagsAmarillasSteps.java.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/SoluciónRetoAutomatización_009/RunnerPagAmarillaBancos.java.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Retos/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Talleres Repaso/BDD Reto 1_01 - Automatizacion Web - BDD.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Talleres Repaso/BDD Reto 1_02 - Automatizacion Web - BDD.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Talleres Repaso/BDD Reto 3_01_1 - Automatizacion Web.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Talleres Repaso/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/07_Vincula Data de Excel en la feature.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/08_2 Tip para Escribir Xpath Efectivos.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/08_3 Tip para Escribir Xpath Efectivos.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/BDD 4 - Implementando Pasos y Objetos II.PDF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/CANVAS.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/Como Escribir Xpaths Efectivos.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/Creacion Worspace.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/JavaScript.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/Manejo Ventanas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/Preguntas examen banco.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/Proyecto Base Partiendo de Arquetipo Serenity Cucumber.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/Proyecto Base en Gradle.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/Roboto.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/Solución Autenticación Http.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/Solución Broken Images.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/Solución Interactuar con objetos Checkboxes.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/TestRoboto.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/Tips Preguntas Reto Evaluativo Bancolombia.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/Usar Logs en nuestro proyecto.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/Uso de Archivos Externos - Excel.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/ejecutarCasoPrb desde Maven.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/Tips/templatesPOM.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/com.choucair.base.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/serenity.properties.backNataly" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/src_automation.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/src_automation/src/test/java/com/choucair/formacion/RunnerFeatures.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/src_automation/src/test/java/com/choucair/formacion/RunnerTags.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/src_automation/src/test/java/com/choucair/formacion/definition/PopupValidationDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/src_automation/src/test/java/com/choucair/formacion/pageobjects/ColorlibLoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/src_automation/src/test/java/com/choucair/formacion/steps/PopupValidationSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/src_automation/src/test/resources/driver/IEDriverServer.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/src_automation/src/test/resources/driver/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/src_automation/src/test/resources/driver/geckodriver_0.18.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/src_automation/src/test/resources/features/Colorlib/Forms/PopupValidation.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/src_automation/src/test/resources/features/demo.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/~$D 1 - Primeros Pasos.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Foco Automatización/~$D 2 - Mi primera historia de usuario.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Informe Automatización/Escenarios E2E - Tiempos de Ejecución Manual vs Automatizado.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Informe Automatización/Informe Automatización Sucursales Sprint 45.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Informe Automatización/Informe automatizacion - Sucursales Clientes Nuevos.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Informe Automatización/Informe automatizacion - Sucursales Ya Clientes.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Informe Automatización/Informe automatizacion.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Informe Automatización/Informe automatizacion_referencia.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Informe Automatización/Informe escenarios E2E_Tiempos de Ejecución Manual vs Automatizado.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Agenda de Ambiente de Pruebas.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Bugs - Tipos de naturaleza.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Cambios proceso Habilitar y mantener soluciones 01122017 v3 (2).pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Conceptos Generales.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/El rol de pruebas - Simplex.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Estandar Quality Center - Pruebas Simplex y ADM 1.0.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Estándar de nombramiento Repositorio y QC Dirección Certificación.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Gestión de reportes atribuíbles al  desarrollo de la solución.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Guia Simplex/Estandar Quality Center - Pruebas Simplex y ADM 1.0.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Guia Simplex/Guia Simplex 1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Guia Simplex/Guia Simplex 2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Guia Simplex/Guia Simplex 3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Guia Simplex/Guia Simplex 4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Guia Simplex/Guia Simplex 5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Guia Simplex/Guia Simplex 6.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Guía carta de certificación_01122017.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Habilitar Soluciones.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/LEY SOX.ppt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Refuerzo Proceso de Pruebas V1.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/Tip de Automatización - Herramientas Tecnicas y Modelos.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/~$Estándar de nombramiento Repositorio y QC Dirección Certificación.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Material Ingreso Banco/~$ía carta de certificación_01122017.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../NOTAS GIT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../NOTAS GIT.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Certificación/CCPMO27286_2Sprint31.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Certificación/CCPMO27286_2Sprint31.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Diseño Técnico/Transacción 0002 Consultar Convenio Nómina.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Diseño Técnico/Transacción PB1 0002 Consultar Convenio Nómina Ver3.0.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Diseño Técnico/Transacción PB1 0002 Consultar Convenio Nómina Ver4.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Diseño Técnico/pruebaunitariaCalidadPB10002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas especializadas/Entregable Lista de Chequeo de Pruebas Especializadas_v3.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/CargaUtil.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/Consultar Convenio y-o Nit.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/Datos de consultar convenio.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/Datos de prueba.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/DatosPrueba-ConsultarConvenio.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/Extraer Campos Trama.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/FlujoAutomatizaciónConsultarConvenioNit.bpm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/ParametrosSimulador.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/RE Transacción Consultar Convenios Activos.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/RespuestaConsultarConvenio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/RespuestaConsultarConvenio_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/RespuestaConsultarConvenio_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/RespuestaConsultarConvenio_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/SPRINT 41-Estrategia de pruebas.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Consultar convenio/Pruebas/SPRINT 51-Estrategia de pruebas.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Alcance Aperturar Cuenta Ahorro Plan Pensión (Digital).docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Apertura de Cuenta desde Golf/1. Apertura de cuenta desde Golf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Apertura de Cuenta desde Golf/2. Apertura de cuenta desde Golf .jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/BUG.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/CCPMO27286_3Sprint48 W.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Certificación/CCPMO27286_3Sprint50.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Certificación/CCPMO27286_3Sprint50.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Certificación/LCPEPMO27286_3Sprint50.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Certificación/LCPEPMO27286_3_Sprint50 - copia.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Certificación/~$PMO27286_3Sprint50.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Choucair/Auditoria Interna v10.0.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Concepto emitido por Golf/1.Evidencias TX8000 para creación de Cuenta de Ahorros y Corriente.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Concepto emitido por Golf/Eviedencias TX8000 para creación de Cuenta de Ahorros y Corriente.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Concepto emitido por Golf/RE Solicitud apoyo certificación Golf - Transacción 8000.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Consumo desde Canal/2018-09-28 09_33_43-.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Consumo desde Canal/Macro 8050 Pension.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Consumo desde Canal/Macro-Parametros para abrir cuenta en plan pension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Consumo desde Canal/MacrosTD (2).xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Consumo desde Canal/MacrosTD (3).xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Consumo desde Canal/Parametros Simulador para aperturar en plan pension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Consumo desde Canal/Parametros para aperturar en plan pension.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Consumo desde Canal/error de datos decimales.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Consumo desde Canal/trama enviada mal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Conversación Lync apoyo certificación.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/OC-1947364/Relacion de Componentes PAB sprint 44.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Oportunidad de Mejora.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/PMO25101- Diseño Técnico detallado Pagos V 1.0 Sprint 21 PAB.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/CheckList/Bad_Entregable Lista de Chequeo de Pruebas Especializadas_v3.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/CheckList/Bug_ntregable Lista de chequeo de pruebas especializadas_v3.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/CheckList/LCPEPMO27286_3_Sprint49_JornadaAhorrosTarjetaDebito_AjusteAperturaCuentaConPlanPension.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/CheckList/LCPEPMO27286_3_Sprint50_JornadaAhorrosTarjetaDebito_AjusteAperturaCuentaConPlanPension.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/CheckList/Version 2 (old)/Calculo de concurrencia PMO27286_3Sprint45.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/CheckList/Version 2 (old)/LCPEPMO27286_3_Sprint45_JornadaAhorrosTarjetaDebito_AjusteAperturaCuentaConPlanPension.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/JOBS DE LA TRX.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/Monitoreo PEX/2_Peticiones Trx 8050 Pensión - Monitorieo PEX.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/Monitoreo PEX/Act 1 2049106.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/Monitoreo PEX/Act 2 2049106.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/Monitoreo PEX/Monitoreo PEX Peticiones trx 8050 pensión.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/Monitoreo PEX/Peticiones Trx 8050 Pensión - monitorieo FullOpenClose.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/Monitoreo PEX/Pex 1 2049106.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/Monitoreo PEX/Pex 2 2049106.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/Monitoreo PEX/~$Act 1 2049106.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/Monitoreo PEX/~$Act 2 2049106.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/Monitoreo PEX/~$Peticiones Trx 8050 Pensión - monitorieo FullOpenClose.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/Monitoreo PEX/~$Pex 1 2049106.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Pruebas Especializadas/Monitoreo PEX/~$Pex 2 2049106.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Set de Datos Prb.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Simulador/Longitud Parametros.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Simulador/SQL CALL simulador.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Simulador/Simulador (hacer enter).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Simulador/Simulador 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Simulador/Simulador 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Simulador/cargar librerias para consumir programa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Simulador/ingresar a simulador por SQL (hacer F4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/Simulador/ingresar a simulador por SQL (hacer enter).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/TRAMASAI  TRX 8050.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Funcionalidades/Plan Pensión/~$O25101- Diseño Técnico detallado Pagos V 1.0 Sprint 21 PAB.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Macro Nueva/Consulta_VPI.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Macro Nueva/UserPAB.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Macro Nueva/pscp.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Macro PAB.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Macro PAB/LOG/Log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Macro PAB/Macro PAB - v11.xltm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Macro PAB/Macro PAB - vExplicadaByCristianD.xltm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Macro PAB/PAB/000000317062798-20180123-91993.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Macro PAB/PAB/PAGOPROVLS012316521740.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Macro PAB/PAB/PAGOPROVLS012316551841.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Macro PAB/PAB/PAGOPROVLS012316554366.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Macro PAB/UserPAB.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PAGOS/Macro PAB/pscp.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/Agenda de Ambientes de Pruebas PMO27286_2.2.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/Agenda de Ambientes de Pruebas v6.0.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/Apertura Cuenta Plan Pension/Formato Reserva de Ambientes -plan pension.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/Backups/Formato Reserva de Ambientes PMO25101.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/Backups/Formato Reserva de Ambientes PMO27286_2.1.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/Backups/Formato Reserva de Ambientes PMO27286_2.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/Backups/Formato Reserva de Ambientes.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/Convenio Nit/Formato Reserva de Ambientes PMO27286_3.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/DesacopleAperturaCuenta/Formato Reserva de Ambientes PMO27286_3.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/Formato Reserva de Ambientes PMO27286_2.2.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/Formato Reserva de Ambientes PMO27286_3.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/Listar Cuentas Depósitos/Formato Reserva de Ambientes PMO27286_3.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/Manual Diligenciamiento Reserva Ambientes de pruebas.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ReservaAmbientes/~$Formato Reserva de Ambientes.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/2018-01-12 08_21_43-SESSIONCALIDAD - EXTRA! X-treme.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/AmbientesBC.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA/Biometria.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA/HClient_123/HCLIENT/Errores_Biometria_HClient.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA/HClient_123/HCLIENT/Manual de Integracion y Uso HClient 20171115_.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA/HClient_123/HCLIENT/Manual_Instalación Bancolombia 20171115.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA/HClient_123/HCLIENT/Manual_Usuario Bancolombia 20171115.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA/HClient_123/HCLIENT/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA/HClient_123/HClient_123/HClient Installer_v1.2.3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA/HClient_123/HClient_123/Notas Instalacion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA/HClient_123/HClient_123/vcredist_x86.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA/HClient_123/HClient_123/vcredist_x86.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA/HClient_123/HClient_123/vcredist_x86_1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA/HClient_123/Proxy HClient.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/BIOMETRIA/Proxy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/CONSULTA CIF.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/DevOps/Preparacion/Bizagi.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/DevOps/Preparacion/Checklist Auditoria practicas automatización V2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/DevOps/Preparacion/Como lo estamos haciendo.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/DevOps/Preparacion/Documentación auditoria pruebas automatizadas con java.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/DevOps/Preparacion/EJEMPLO.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/DevOps/Preparacion/Estándar para el control de versiones - Movilizadores.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/DevOps/Preparacion/Estándar para el control de versiones.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/DevOps/Preparacion/Guía para documentar pruebas automatizadas con Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/DevOps/Preparacion/Plan de pruebas Inscripción de cuentas internacionales.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/Diagrama de Arquitectura Contenedor Sucursales.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/Diagrama de Arquitectura Sucursales.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/EXPERIENCIA/AJUSTE DE TARIFAS/Auditoria Interna v10.0.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/EXPERIENCIA/AJUSTE DE TARIFAS/CCPMO27286_4Sprint50.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/EXPERIENCIA/AJUSTE DE TARIFAS/CCPMO27286_4Sprint50.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/EXPERIENCIA/AJUSTE DE TARIFAS/LCPEPMO26286_4Sprint50-W - copia - copia (2).xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/EXPERIENCIA/AJUSTE DE TARIFAS/LCPEPMO26286_4Sprint50-W - copia - copia.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/EXPERIENCIA/AJUSTE DE TARIFAS/LCPEPMO26286_4Sprint50-W.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/EXPERIENCIA/AJUSTE DE TARIFAS/LCPEPMO26286_4Sprint50.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/EXPERIENCIA/AJUSTE DE TARIFAS/Plan de Pruebas.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/EXPERIENCIA/AJUSTE DE TARIFAS/RecuperarDatosCliente_V4.0-soapui-project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/EXPERIENCIA/AJUSTE DE TARIFAS/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/EXPERIENCIA/AJUSTE DE TARIFAS/planes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/FormulasExcel.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/Ocupaciones.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/PENDIENTES AUTOMATIZACIÓN.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Bitácora.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Calculo de concurrencia PMO27286_2Sprint33.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Entrega Sucursales 140618.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/LCPEPMO26858_2Sprint33 - Completo.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Matriz Riesgos.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Plan de Pruebas.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Solicitar acceso a grupo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Solicitar acceso a grupo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37 Sin pruebas/CCPMO27286_2Sprint37.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37 Sin pruebas/CCPMO27286_2Sprint37.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37 Sin pruebas/LCPEPMO27286_2Sprint37.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37 Sin pruebas/MRPMO27286_2Sprint37.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37 Sin pruebas/RE Aceptación Timeout listas de Control - PMO27286 Digitalización de Sucursales.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37 Sin pruebas/RE Aprobación Carta de certificación sin pruebas - Digitalización de herramientas en sucurasles.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37/CCPMO27286_2Sprint37.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37/CCPMO27286_2Sprint37.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37/LCPEPMO27286_2Sprint37.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37/PMO27286_2 Digitalización de Herramientas en Sucursales Concepto PE Seguridad.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37/RE Aceptación Contenedor de aplicaciones -  PMO27286 Digitalización de Sucursales.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37/RE Pruebas de perfomance  Apertura de cuentas de ahorro (Experiencia Sucursal).msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37/RE Reporte retest Vinculación Digital.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37/RV PMO27286_2 Digitalización de Herramientas en Sucursales Concepto PE Seguridad.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37_1/Alcance carta.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37_1/CCPMO27286_2Sprint37_1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37_1/CCPMO27286_2Sprint37_1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37_1/LCPEPMO27286_2Sprint37_1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37_1/RE Aceptación PMO27286 Digitalización de Herramientas en Sucursales.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37_1/RE Pruebas de perfomance  Apertura de cuentas de ahorro (Experiencia Sucursal).msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37_1/RV PMO27286_2 Digitalización de Herramientas en Sucursales Concepto PE Seguridad.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37_2/CCPMO27286_2Sprint37_2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37_2/CCPMO27286_2Sprint37_2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37_2/LCPEPMO27286_2Sprint37_2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37_2/PMO27286_2 Digitalización de Herramientas en Sucursales Concepto PE Seguridad.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37_2/RE Aceptación Ajuste Contenedor de aplicaciones -  PMO27286 Digitalización de Sucursales.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sprint 37_2/RE Solucion Usuario de Servicio.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/ReemplazoVacasNata/Sucursales.msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/SUCURSALES.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/Vinculaciones/64100155891CartaBienvenida.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/Vinculaciones/64100155891CertificacionBancaria (2).pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/Vinculaciones/64100155891DocumentoVinculacion.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/Vinculaciones/64100155891Recomendaciones_de_seguridad.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/Vinculaciones/Viviana Marin/CartaBienvenida.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/Vinculaciones/Viviana Marin/CertificacionBancaria.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/Vinculaciones/Viviana Marin/DocumentoVinculacion.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/Vinculaciones/Viviana Marin/Recomendaciones_de_seguridad.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/BackendAs400db2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_CABFFCTAS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_CABFFTARJ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_CADDR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_CINDV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_CREACIONDECUENTA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_LISTASDECONTROL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_LogCOMFFLGWWW.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_LogSTIFFLG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_LoglPCCFFLGSBC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_MATFFDIRDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_MATFFESTCL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_MATFFNVCTA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_NumeroCuenta8050STIFFLGVP1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_NumeroTargetaVirtual.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_PAFFCNVNO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_TOKEN.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/Consultar_controlTerceroCNAME.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/BackendAs400db2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Consultar_CABFFCTAS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Consultar_CABFFTARJ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Consultar_CADDR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Consultar_CINDV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Consultar_CNAME.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Consultar_MATFFDIRDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Consultar_MATFFESTCL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Consultar_MATFFNVCTA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Consultar_PABFFCNVNO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Consultar_Token.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Consultar_controlTerceroCNAME.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Consultar_creacionDeCuenta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Consultar_listasDeControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/As400db2/Pruebas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/__MACOSX/._As400db2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/__MACOSX/As400db2/._Consultar_CADDR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/__MACOSX/As400db2/._Consultar_CINDV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/__MACOSX/As400db2/._Consultar_CNAME.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/__MACOSX/As400db2/._Consultar_PABFFCNVNO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/__MACOSX/As400db2/._Consultar_Token.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sucursales/as400db2/V2/__MACOSX/As400db2/._Pruebas.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/build.gradle" />
+      </list>
     </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="exceltofeature" type="b2602c69:ProjectViewProjectNode" />
+              <item name="excel-a-feature" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae3e7274-009a-4815-a202-baceef0a5d4f" name="Default Changelist" comment="" />
+      <created>1564877942262</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564877942262</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="ConsoleMavenPlugin" />
+      <window_info anchor="bottom" id="SonarLint" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Build" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
