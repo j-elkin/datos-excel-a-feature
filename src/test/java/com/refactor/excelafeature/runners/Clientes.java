@@ -13,7 +13,7 @@ import java.io.IOException;
 @RunWith(RunnerPersonalizado.class)
 @CucumberOptions(
 		features="src/test/resources/features/clientes.feature",
-		glue="co.com.bancolombia.sucursales.stepdefinitions",
+		glue="com.refactor.excelafeature.stepdefinitions",
 		snippets=SnippetType.CAMELCASE)
 
 public class Clientes {
