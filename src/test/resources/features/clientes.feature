@@ -12,7 +12,5 @@ Característica: Cargar datos de un archivo excel a un archivo feature
 
     Ejemplos:
       | clientType | idType | idNumber | nombre         | apellido      |
-      ##@externaldata@./src/test/resources/Datadriven/Clientes.xlsx@Hoja1@1-3
+      ##@externaldata@./src/test/resources/Datadriven/Clientes.xlsx@Hoja1@1
    |N   |1   |1234   |Juan   |Soto|
-   |J   |3   |5678   |Raul   |perez|
-   |A   |2   |10842   |Andres Esteban   |Yepez Camargo|
