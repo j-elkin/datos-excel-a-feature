@@ -9,7 +9,7 @@ Característica: Cargar datos de un archivo excel a un archivo feature
     Dado realiza el ingreso del cliente
       | <clientType> | <idType> | <idNumber> | <nombre> | <apellido> |
 
-  @1_CedulaCiudadania
+
     Ejemplos:
       | clientType | idType | idNumber | nombre         | apellido        |
     ##@externaldata@./src/test/resources/Datadriven/Clientes.xlsx@Hoja1@
@@ -20,14 +20,13 @@ Característica: Cargar datos de un archivo excel a un archivo feature
 	|	E	|	12	|	322112	|	Felipe	|	Jaramillo Lopez	|
 
 
-  @2_CedulaCiudadania
+
     Ejemplos:
       | clientType | idType | idNumber | nombre         | apellido        |
     ##@externaldata@./src/test/resources/Datadriven/Clientes.xlsx@Hoja1@1
 	|	N	|	1	|	1234	|	Juan	|	Soto	|
 
 
-  @3_CedulaCiudadania
     Ejemplos:
       | clientType | idType | idNumber | nombre         | apellido        |
 	##@externaldata@./src/test/resources/Datadriven/Clientes.xlsx@Hoja1@2,3,5
@@ -35,14 +34,10 @@ Característica: Cargar datos de un archivo excel a un archivo feature
 	|	A	|	2	|	10842	|	Andres Esteban	|	Yepez Camargo	|
 	|	E	|	12	|	322112	|	Felipe	|	Jaramillo Lopez	|
 
-  @3_CedulaCiudadania
     Ejemplos:
       | clientType | idType | idNumber | nombre         | apellido        |
 	##@externaldata@./src/test/resources/Datadriven/Clientes.xlsx@Hoja1@2-4
 	|	J	|	3	|	5678	|	Raul	|	perez	|
 	|	A	|	2	|	10842	|	Andres Esteban	|	Yepez Camargo	|
 	|	P	|	40	|	31941	|	Camilo Andres	|	Arango Suarez	|
-
-
-
 

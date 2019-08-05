@@ -151,7 +151,7 @@ public class DatosAlFeature {
 			datosDelFeature.add(allCellData.toString() + "	|");
 
 			if (rowNumber + 1 == Integer.parseInt(dataVectorRango[1])) {
-				rowNumber = datosDeExcel.size() - 1;
+				break;
 			}
 		}
 	}
@@ -171,7 +171,7 @@ public class DatosAlFeature {
 				rowNumber = filaSeleccionada - 1;
 				pos++;
 			} else {
-				rowNumber = datosDeExcel.size() - 1;
+				break;
 			}
 		}
 	}
