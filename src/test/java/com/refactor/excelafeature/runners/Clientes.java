@@ -23,7 +23,7 @@ public class Clientes {
 	}
 
 	@BeforeSuite
-	public static void test() throws InvalidFormatException, IOException {
+	public static void test() {
 		DatosAlFeature.extraerDatosDeExcel().sobreEscribirElArchivoFeature("./src/test/resources/features/clientes.feature");
 	}
 }

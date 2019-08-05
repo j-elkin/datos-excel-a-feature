@@ -43,7 +43,7 @@ public class DatosAlFeature {
 	}
 
 
-	public void sobreEscribirElArchivoFeature(String rutaDelArchivoFeature) throws IOException, InvalidFormatException {
+	public void sobreEscribirElArchivoFeature(String rutaDelArchivoFeature)  {
 		File archivoFeature = new File(rutaDelArchivoFeature);
 		List<String> featureConDatosDeExcel = obtenerFeatureConDatosDeExcel(archivoFeature);
 		try (BufferedWriter writer = new BufferedWriter(
@@ -52,6 +52,8 @@ public class DatosAlFeature {
 				writer.write(string);
 				writer.write("\n");
 			}
+		} catch (IOException e) {
+			LOGGER.severe(LoggerApp.getStackTrace(e));
 		}
 	}
 
@@ -77,10 +79,6 @@ public class DatosAlFeature {
 					omitirFilaDelFeature = false;
 				}
 			}
-		} catch (UnsupportedEncodingException e) {
-			LOGGER.severe(LoggerApp.getStackTrace(e));
-		} catch (FileNotFoundException e) {
-			LOGGER.severe(LoggerApp.getStackTrace(e));
 		} catch (IOException e) {
 			LOGGER.severe(LoggerApp.getStackTrace(e));
 		}
@@ -92,41 +90,42 @@ public class DatosAlFeature {
 		filaSeleccionada = 0;
 		pos = 0;
 
-		try {
-			if (filaDelFeature.trim().contains("##@externaldata")) {
+		if (filaDelFeature.trim().contains("##@externaldata")) {
+			String[] dataVector = filaDelFeature.trim().split("@");
+			String excelFilePath = dataVector[2];
+			String sheetName = dataVector[3];
+			datosDeExcel = new LectorExcel().getData(excelFilePath, sheetName);
+
+			if( datosDeExcel == null){
+				LOGGER.severe("\n*** No fue posible obtener los datos del archivo Excel. " +
+						"Por favor revise si la ruta indicada es correcta o sino tiene el archivo abierto.***\n");
+
+			} else if (dataVector.length == 4 ) {
 				datosDelFeature.add(filaDelFeature);
-				String[] dataVector = filaDelFeature.trim().split("@");
-				String excelFilePath = dataVector[2];
-				String sheetName = dataVector[3];
-				datosDeExcel = new LectorExcel().getData(excelFilePath, sheetName);
-
-				if (dataVector.length == 4) {
-					agregarTodasLasFilasDelExcelAlFeature();
-
-				} else if (dataVector.length == 5) {
-					if (dataVector[4].contains("-")) {
-						dataVectorRango = dataVector[4].trim().split("-");
-						filaSeleccionada = Integer.parseInt(dataVectorRango[0]) - 1;
-						agregarRangoDeFilasDelExcelAlFeature();
-
-					} else if (dataVector[4].contains(",")) {
-						dataVectorRango = dataVector[4].trim().split(",");
-						filaSeleccionada = Integer.parseInt(dataVectorRango[0]) - 1;
-						agregarFilasEspecificasDelExcelAlFeature();
-
-					} else {
-						filaSeleccionada = Integer.parseInt(dataVector[4]) - 1;
-						agregarUnaFilaDelExcelAlFeature();
-					}
-				}
+				agregarTodasLasFilasDelExcelAlFeature();
 				etiquetaEncontrada = true;
 
+			} else if (dataVector.length == 5) {
+				datosDelFeature.add(filaDelFeature);
+				if (dataVector[4].contains("-")) {
+					dataVectorRango = dataVector[4].trim().split("-");
+					filaSeleccionada = Integer.parseInt(dataVectorRango[0]) - 1;
+					agregarRangoDeFilasDelExcelAlFeature();
+
+				} else if (dataVector[4].contains(",")) {
+					dataVectorRango = dataVector[4].trim().split(",");
+					filaSeleccionada = Integer.parseInt(dataVectorRango[0]) - 1;
+					agregarFilasEspecificasDelExcelAlFeature();
+
+				} else {
+					filaSeleccionada = Integer.parseInt(dataVector[4]) - 1;
+					agregarUnaFilaDelExcelAlFeature();
+				}
+				etiquetaEncontrada = true;
 			}
-		} catch (IOException e) {
-			LOGGER.severe(LoggerApp.getStackTrace(e));
-		} catch (InvalidFormatException e) {
-			LOGGER.severe(LoggerApp.getStackTrace(e));
+
 		}
+
 	}
 
 	private void agregarTodasLasFilasDelExcelAlFeature() {

@@ -27,10 +27,17 @@ public class LectorExcel {
 	 * @throws IOException
 	 *             Manejo de error para el proceso de entrada y salida de datos
 	 */
-	public List<Map<String, String>> getData(String excelFilePath, String sheetName)
-			throws InvalidFormatException, IOException {
-		Sheet sheet = getSheetByName(excelFilePath, sheetName);
-		return readSheet(sheet);
+	public List<Map<String, String>> getData(String excelFilePath, String sheetName)  {
+		List<Map<String, String>> datosExcel = null;
+		try {
+			Sheet sheet = getSheetByName(excelFilePath, sheetName);
+			datosExcel = readSheet(sheet);
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (InvalidFormatException e) {
+			e.printStackTrace();
+		}
+		return datosExcel;
 	}
 
 	/**
