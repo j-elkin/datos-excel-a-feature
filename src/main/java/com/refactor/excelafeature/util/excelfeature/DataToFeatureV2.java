@@ -75,9 +75,9 @@ public class DataToFeatureV2 {
 
 				if (etiquetaEncontrada) {
 					datosDeExcel = new LectorExcel().getData(excelFilePath, sheetName);
-					//agregarUnaFilaAlFeatureDesdeElExcel();
-					//agregarUnRangoDeFilasAlFeatureDesdeElExcel();
-					agregarFilasEspecificasAlFeatureDesdeElExcel();
+					//agregarUnaFilaDelExcelAlFeature();
+					//agregarUnRangoDeFilasDelExcelAlFeature();
+					agregarFilasEspecificasDelExcelAlFeature();
 					/*for (int rowNumber = filaSeleccionada; rowNumber < datosDeExcel.size() - 1; rowNumber++) {
 						StringBuilder allCellData = new StringBuilder();
 						for (Entry<String, String> mapData : datosDeExcel.get(rowNumber).entrySet()) {
@@ -169,7 +169,7 @@ public class DataToFeatureV2 {
 		}
 	}
 
-	private static void agregarUnaFilaAlFeatureDesdeElExcel(){
+	private static void agregarUnaFilaDelExcelAlFeature(){
 		StringBuilder allCellData = new StringBuilder();
 		for (Entry<String, String> mapData : datosDeExcel.get(filaSeleccionada).entrySet()) {
 			allCellData.append("	|	" + mapData.getValue());
@@ -177,7 +177,7 @@ public class DataToFeatureV2 {
 		datosDelFeature.add(allCellData.toString() + "	|");
 	}
 
-	private static void agregarUnRangoDeFilasAlFeatureDesdeElExcel(){
+	private static void agregarUnRangoDeFilasDelExcelAlFeature(){
 		for (int rowNumber = filaSeleccionada; rowNumber < datosDeExcel.size() - 1; rowNumber++) {
 			StringBuilder allCellData = new StringBuilder();
 			for (Entry<String, String> mapData : datosDeExcel.get(rowNumber).entrySet()) {
@@ -193,7 +193,7 @@ public class DataToFeatureV2 {
 		}
 	}
 
-	private static void agregarFilasEspecificasAlFeatureDesdeElExcel(){
+	private static void agregarFilasEspecificasDelExcelAlFeature(){
 		for (int rowNumber = filaSeleccionada; rowNumber < datosDeExcel.size() - 1; rowNumber++) {
 			StringBuilder allCellData = new StringBuilder();
 			for (Entry<String, String> mapData : datosDeExcel.get(rowNumber).entrySet()) {
@@ -211,6 +211,10 @@ public class DataToFeatureV2 {
 				rowNumber = datosDeExcel.size() - 1;
 			}
 		}
+	}
+
+	private static void agregarTodasLasFilasDelExcelAlFeature(){
+
 	}
 
 	/**
