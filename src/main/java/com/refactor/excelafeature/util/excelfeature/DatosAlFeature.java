@@ -1,7 +1,6 @@
 package com.refactor.excelafeature.util.excelfeature;
 
 import com.refactor.excelafeature.util.LoggerApp;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -46,11 +45,11 @@ public class DatosAlFeature {
 	public void sobreEscribirElArchivoFeature(String rutaDelArchivoFeature)  {
 		File archivoFeature = new File(rutaDelArchivoFeature);
 		List<String> featureConDatosDeExcel = obtenerFeatureConDatosDeExcel(archivoFeature);
-		try (BufferedWriter writer = new BufferedWriter(
+		try (BufferedWriter escribirEnElFeature = new BufferedWriter(
 				new OutputStreamWriter(new FileOutputStream(archivoFeature), "UTF-8"));) {
-			for (String string : featureConDatosDeExcel) {
-				writer.write(string);
-				writer.write("\n");
+			for (String linea : featureConDatosDeExcel) {
+				escribirEnElFeature.write(linea);
+				escribirEnElFeature.write("\n");
 			}
 		} catch (IOException e) {
 			LOGGER.severe(LoggerApp.getStackTrace(e));
@@ -60,10 +59,10 @@ public class DatosAlFeature {
 
 	private List<String> obtenerFeatureConDatosDeExcel(File archivoFeature) {
 
-		try (BufferedReader buffReader = new BufferedReader(
+		try (BufferedReader lectorFeature = new BufferedReader(
 				new InputStreamReader(new BufferedInputStream(new FileInputStream(archivoFeature)), "UTF-8"))) {
 
-			while ((filaDelFeature = buffReader.readLine()) != null) {
+			while ((filaDelFeature = lectorFeature.readLine()) != null) {
 
 				agregarDatosDelExcelAlFeature();
 
@@ -92,9 +91,9 @@ public class DatosAlFeature {
 
 		if (filaDelFeature.trim().contains("##@externaldata")) {
 			String[] dataVector = filaDelFeature.trim().split("@");
-			String excelFilePath = dataVector[2];
-			String sheetName = dataVector[3];
-			datosDeExcel = new LectorExcel().getData(excelFilePath, sheetName);
+			String rutaArchivoExcel = dataVector[2];
+			String nombreHojaExcel = dataVector[3];
+			datosDeExcel = new LectorExcel().getData(rutaArchivoExcel, nombreHojaExcel);
 
 			if( datosDeExcel == null){
 				LOGGER.severe("\n*** No fue posible obtener los datos del archivo Excel. " +
@@ -129,45 +128,45 @@ public class DatosAlFeature {
 	}
 
 	private void agregarTodasLasFilasDelExcelAlFeature() {
-		for (int rowNumber = 0; rowNumber < datosDeExcel.size() - 1; rowNumber++) {
-			StringBuilder allCellData = new StringBuilder();
-			for (Entry<String, String> mapData : datosDeExcel.get(rowNumber).entrySet()) {
-				allCellData.append("	|	" + mapData.getValue());
+		for (int numeroFila = 0; numeroFila < datosDeExcel.size() - 1; numeroFila++) {
+			StringBuilder valoresDeLaFila = new StringBuilder();
+			for (Entry<String, String> valorCelda : datosDeExcel.get(numeroFila).entrySet()) {
+				valoresDeLaFila.append("	|	" + valorCelda.getValue());
 			}
-			datosDelFeature.add(allCellData.toString() + "	|");
+			datosDelFeature.add(valoresDeLaFila.toString() + "	|");
 
 		}
 	}
 
 	private void agregarRangoDeFilasDelExcelAlFeature(){
-		for (int rowNumber = filaSeleccionada; rowNumber < datosDeExcel.size() - 1; rowNumber++) {
-			StringBuilder allCellData = new StringBuilder();
-			for (Entry<String, String> mapData : datosDeExcel.get(rowNumber).entrySet()) {
-				if (rowNumber < Integer.parseInt(dataVectorRango[1])) {
-					allCellData.append("	|	" + mapData.getValue());
+		for (int numeroFila = filaSeleccionada; numeroFila < datosDeExcel.size() - 1; numeroFila++) {
+			StringBuilder valoresDeLaFila = new StringBuilder();
+			for (Entry<String, String> valorCelda : datosDeExcel.get(numeroFila).entrySet()) {
+				if (numeroFila < Integer.parseInt(dataVectorRango[1])) {
+					valoresDeLaFila.append("	|	" + valorCelda.getValue());
 				}
 			}
-			datosDelFeature.add(allCellData.toString() + "	|");
+			datosDelFeature.add(valoresDeLaFila.toString() + "	|");
 
-			if (rowNumber + 1 == Integer.parseInt(dataVectorRango[1])) {
+			if (numeroFila + 1 == Integer.parseInt(dataVectorRango[1])) {
 				break;
 			}
 		}
 	}
 
 	private void agregarFilasEspecificasDelExcelAlFeature(){
-		for (int rowNumber = filaSeleccionada; rowNumber < datosDeExcel.size() - 1; rowNumber++) {
-			StringBuilder allCellData = new StringBuilder();
-			for (Entry<String, String> mapData : datosDeExcel.get(rowNumber).entrySet()) {
-				if (rowNumber + 1 == Integer.parseInt(dataVectorRango[pos]) ) {
-					allCellData.append("	|	" + mapData.getValue());
+		for (int numeroFila = filaSeleccionada; numeroFila < datosDeExcel.size() - 1; numeroFila++) {
+			StringBuilder valoresDeLaFila = new StringBuilder();
+			for (Entry<String, String> valorCelda : datosDeExcel.get(numeroFila).entrySet()) {
+				if (numeroFila + 1 == Integer.parseInt(dataVectorRango[pos]) ) {
+					valoresDeLaFila.append("	|	" + valorCelda.getValue());
 				}
 			}
-			datosDelFeature.add(allCellData.toString() + "	|");
+			datosDelFeature.add(valoresDeLaFila.toString() + "	|");
 
 			if (pos + 1 < dataVectorRango.length) {
 				filaSeleccionada = Integer.parseInt(dataVectorRango[pos + 1]) - 1;
-				rowNumber = filaSeleccionada - 1;
+				numeroFila = filaSeleccionada - 1;
 				pos++;
 			} else {
 				break;
@@ -176,11 +175,11 @@ public class DatosAlFeature {
 	}
 
 	private void agregarUnaFilaDelExcelAlFeature(){
-		StringBuilder allCellData = new StringBuilder();
-		for (Entry<String, String> mapData : datosDeExcel.get(filaSeleccionada).entrySet()) {
-			allCellData.append("	|	" + mapData.getValue());
+		StringBuilder valoresDeLaFila = new StringBuilder();
+		for (Entry<String, String> valorCelda : datosDeExcel.get(filaSeleccionada).entrySet()) {
+			valoresDeLaFila.append("	|	" + valorCelda.getValue());
 		}
-		datosDelFeature.add(allCellData.toString() + "	|");
+		datosDelFeature.add(valoresDeLaFila.toString() + "	|");
 	}
 
 }
