@@ -5,10 +5,7 @@ import com.refactor.excelafeature.util.excelfeature.DatosAlFeature;
 import com.refactor.excelafeature.util.excelfeature.RunnerPersonalizado;
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.junit.runner.RunWith;
-
-import java.io.IOException;
 
 @RunWith(RunnerPersonalizado.class)
 @CucumberOptions(
