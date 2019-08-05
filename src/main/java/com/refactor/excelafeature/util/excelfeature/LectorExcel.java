@@ -1,5 +1,6 @@
 package com.refactor.excelafeature.util.excelfeature;
 
+import com.refactor.excelafeature.util.LoggerApp;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.NumberToTextConverter;
@@ -10,8 +11,11 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 public class LectorExcel {
+
+	private static final Logger LOGGER = Logger.getLogger(LectorExcel.class.getName());
 
 	/**
 	 * Obtiene los datos de un archivo de excel, teniendo en cuenta el nombre de la
@@ -33,9 +37,9 @@ public class LectorExcel {
 			Sheet sheet = getSheetByName(excelFilePath, sheetName);
 			datosExcel = readSheet(sheet);
 		} catch (IOException e) {
-			e.printStackTrace();
+			LOGGER.severe(LoggerApp.getStackTrace(e));
 		} catch (InvalidFormatException e) {
-			e.printStackTrace();
+			LOGGER.severe(LoggerApp.getStackTrace(e));
 		}
 		return datosExcel;
 	}
