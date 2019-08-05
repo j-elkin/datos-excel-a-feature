@@ -1,7 +1,7 @@
 package com.refactor.excelafeature.runners;
 
 import com.refactor.excelafeature.util.excelfeature.BeforeSuite;
-import com.refactor.excelafeature.util.excelfeature.DataToFeatureV2;
+import com.refactor.excelafeature.util.excelfeature.DatosAlFeature;
 import com.refactor.excelafeature.util.excelfeature.RunnerPersonalizado;
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
@@ -24,6 +24,6 @@ public class Clientes {
 
 	@BeforeSuite
 	public static void test() throws InvalidFormatException, IOException {
-		DataToFeatureV2.overrideFeatureFiles("./src/test/resources/features/clientes.feature");
+		DatosAlFeature.extraerDatosDeExcel().sobreEscribirElArchivoFeature("./src/test/resources/features/clientes.feature");
 	}
 }
