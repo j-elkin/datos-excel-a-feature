@@ -11,7 +11,7 @@ Característica: Cargar datos de un archivo excel a un archivo feature
 
   @1_CedulaCiudadania
     Ejemplos:
-      | clientType | idType | idNumber | nombre         | apellido      |
+      | clientType | idType | idNumber | nombre         | apellido        |
     ##@externaldata@./src/test/resources/Datadriven/Clientes.xlsx@Hoja1@
 	|	N	|	1	|	1234	|	Juan	|	Soto	|
 	|	J	|	3	|	5678	|	Raul	|	perez	|
@@ -22,24 +22,26 @@ Característica: Cargar datos de un archivo excel a un archivo feature
 
   @2_CedulaCiudadania
     Ejemplos:
-      | clientType | idType | idNumber | nombre | apellido |
-    ##@externaldata@./src/test/resources/Datadriven/Clientes.xlsx@Hoja1@
+      | clientType | idType | idNumber | nombre         | apellido        |
+    ##@externaldata@./src/test/resources/Datadriven/Clientes.xlsx@Hoja1@1
 	|	N	|	1	|	1234	|	Juan	|	Soto	|
-	|	J	|	3	|	5678	|	Raul	|	perez	|
-	|	A	|	2	|	10842	|	Andres Esteban	|	Yepez Camargo	|
-	|	P	|	40	|	31941	|	Camilo Andres	|	Arango Suarez	|
-	|	E	|	12	|	322112	|	Felipe	|	Jaramillo Lopez	|
 
 
   @3_CedulaCiudadania
     Ejemplos:
-      | clientType | idType | idNumber | nombre         | apellido      |
-
-	|	N	|	1	|	1234	|	Juan	|	Soto	|
+      | clientType | idType | idNumber | nombre         | apellido        |
+	##@externaldata@./src/test/resources/Datadriven/Clientes.xlsx@Hoja1@2,3,5
+	|	J	|	3	|	5678	|	Raul	|	perez	|
 	|	A	|	2	|	10842	|	Andres Esteban	|	Yepez Camargo	|
-	|	P	|	40	|	31941	|	Camilo Andres	|	Arango Suarez	|
 	|	E	|	12	|	322112	|	Felipe	|	Jaramillo Lopez	|
 
+  @3_CedulaCiudadania
+    Ejemplos:
+      | clientType | idType | idNumber | nombre         | apellido        |
+	##@externaldata@./src/test/resources/Datadriven/Clientes.xlsx@Hoja1@2-4
+	|	J	|	3	|	5678	|	Raul	|	perez	|
+	|	A	|	2	|	10842	|	Andres Esteban	|	Yepez Camargo	|
+	|	P	|	40	|	31941	|	Camilo Andres	|	Arango Suarez	|
 
 
 

@@ -23,19 +23,12 @@ public class DataToFeatureV2 {
 	private static final Logger LOGGER = Logger.getLogger(DataToFeatureV2.class.getName());
 
 	private static String filaDelFeature;
-	private static List<Map<String, String>> datosDeExcel = null;
-	private static boolean etiquetaEncontrada = false;
-	private static boolean omitirFilaDelFeature = false;
-	private static boolean esUnRango = false;
-	private static boolean esMultiple = false;
-	private static boolean esRangoDefinido = false;
-
-	private static String[] dataVector;
+	private static List<Map<String, String>> datosDeExcel;
+	private static boolean omitirFilaDelFeature;
 	private static String[] dataVectorRango;
-	private static String sheetName;
-	private static String excelFilePath;
 	private static int filaSeleccionada;
-	private static int pos = 0;
+	private static int pos;
+	private static boolean etiquetaEncontrada = false;
 
 	private static List<String> datosDelFeature = new ArrayList<String>();
 
@@ -58,38 +51,26 @@ public class DataToFeatureV2 {
 	 * @throws IOException
 	 */
 
-	private static List<String> setExcelDataToFeature2(File featureFile) {
+	private static List<String> sobreEscribirArchivoFeature(File featureFile) {
 
 		try (BufferedReader buffReader = new BufferedReader(
 				new InputStreamReader(new BufferedInputStream(new FileInputStream(featureFile)), "UTF-8"))) {
 
 			while ((filaDelFeature = buffReader.readLine()) != null) {
-				dataVector = null;
-				dataVectorRango = null;
-				sheetName = null;
-				excelFilePath = null;
-				filaSeleccionada = 0;
-				pos = 0;
 
-				determinarLasFilasDelExcelAExtraer();
+				agregarDatosDelExcelAlFeature();
 
 				if (etiquetaEncontrada) {
-					datosDeExcel = new LectorExcel().getData(excelFilePath, sheetName);
-					//agregarUnaFilaDelExcelAlFeature();
-					//agregarUnRangoDeFilasDelExcelAlFeature();
-					//agregarFilasEspecificasDelExcelAlFeature();
-					agregarTodasLasFilasDelExcelAlFeature();
-
 					etiquetaEncontrada = false;
 					omitirFilaDelFeature = true;//Se omite la siguiente fila
-				} else 	if ( filaDelFeature.trim().startsWith("|") && filaDelFeature.trim().endsWith("|") && !omitirFilaDelFeature) {
+
+				} else if ( filaDelFeature.trim().startsWith("|") && filaDelFeature.trim().endsWith("|") && !omitirFilaDelFeature) {
 					datosDelFeature.add(filaDelFeature);
+
 				} else if( !filaDelFeature.trim().startsWith("|") && !filaDelFeature.trim().endsWith("|") ) {
 					datosDelFeature.add(filaDelFeature);
 					omitirFilaDelFeature = false;
 				}
-
-
 			}
 		} catch (UnsupportedEncodingException e) {
 			LOGGER.severe(LoggerApp.getStackTrace(e));
@@ -97,38 +78,48 @@ public class DataToFeatureV2 {
 			LOGGER.severe(LoggerApp.getStackTrace(e));
 		} catch (IOException e) {
 			LOGGER.severe(LoggerApp.getStackTrace(e));
-		} catch (InvalidFormatException e) {
-			LOGGER.severe(LoggerApp.getStackTrace(e));
 		}
 		return datosDelFeature;
 	}
 
 
-	private static void determinarLasFilasDelExcelAExtraer(){
-		if (filaDelFeature.trim().contains("##@externaldata")) {
-			dataVector = filaDelFeature.trim().split("@");
-			excelFilePath = dataVector[2];
-			sheetName = dataVector[3];
-			if (dataVector.length == 4) {
-				esUnRango = true;
+	private static void agregarDatosDelExcelAlFeature() {
+		filaSeleccionada = 0;
+		pos = 0;
 
-			} else if (dataVector.length == 5) {
-				if (dataVector[4].contains("-")) {
-					dataVectorRango = dataVector[4].trim().split("-");
-					esRangoDefinido = true;
-					filaSeleccionada = Integer.parseInt(dataVectorRango[0]) - 1;
-				} else if (dataVector[4].contains(",")) {
-					dataVectorRango = dataVector[4].trim().split(",");
-					esUnRango = true;
-					esMultiple = true;
-					filaSeleccionada = Integer.parseInt(dataVectorRango[0]) - 1;
-				} else {
-					filaSeleccionada = Integer.parseInt(dataVector[4]) - 1;
+		try {
+			if (filaDelFeature.trim().contains("##@externaldata")) {
+				datosDelFeature.add(filaDelFeature);
+				String[] dataVector = filaDelFeature.trim().split("@");
+				String excelFilePath = dataVector[2];
+				String sheetName = dataVector[3];
+				datosDeExcel = new LectorExcel().getData(excelFilePath, sheetName);
 
+				if (dataVector.length == 4) {
+					agregarTodasLasFilasDelExcelAlFeature();
+
+				} else if (dataVector.length == 5) {
+					if (dataVector[4].contains("-")) {
+						dataVectorRango = dataVector[4].trim().split("-");
+						filaSeleccionada = Integer.parseInt(dataVectorRango[0]) - 1;
+						agregarUnRangoDeFilasDelExcelAlFeature();
+
+					} else if (dataVector[4].contains(",")) {
+						dataVectorRango = dataVector[4].trim().split(",");
+						filaSeleccionada = Integer.parseInt(dataVectorRango[0]) - 1;
+						agregarFilasEspecificasDelExcelAlFeature();
+
+					} else {
+						filaSeleccionada = Integer.parseInt(dataVector[4]) - 1;
+						agregarUnaFilaDelExcelAlFeature();
+					}
 				}
+				etiquetaEncontrada = true;
 			}
-			etiquetaEncontrada = true;
-			datosDelFeature.add(filaDelFeature);
+		} catch (IOException e) {
+			LOGGER.severe(LoggerApp.getStackTrace(e));
+		} catch (InvalidFormatException e) {
+			LOGGER.severe(LoggerApp.getStackTrace(e));
 		}
 	}
 
@@ -228,7 +219,7 @@ public class DataToFeatureV2 {
 	public static void overrideFeatureFiles(String featuresDirectoryPath) throws IOException, InvalidFormatException {
 		List<File> listOfFeatureFiles = listOfFeatureFiles(new File(featuresDirectoryPath));
 		for (File featureFile : listOfFeatureFiles) {
-			List<String> featureWithExcelData = setExcelDataToFeature2(featureFile);
+			List<String> featureWithExcelData = sobreEscribirArchivoFeature(featureFile);
 			try (BufferedWriter writer = new BufferedWriter(
 					new OutputStreamWriter(new FileOutputStream(featureFile), "UTF-8"));) {
 				for (String string : featureWithExcelData) {
