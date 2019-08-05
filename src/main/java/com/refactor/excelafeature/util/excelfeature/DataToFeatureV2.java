@@ -77,46 +77,9 @@ public class DataToFeatureV2 {
 					datosDeExcel = new LectorExcel().getData(excelFilePath, sheetName);
 					//agregarUnaFilaDelExcelAlFeature();
 					//agregarUnRangoDeFilasDelExcelAlFeature();
-					agregarFilasEspecificasDelExcelAlFeature();
-					/*for (int rowNumber = filaSeleccionada; rowNumber < datosDeExcel.size() - 1; rowNumber++) {
-						StringBuilder allCellData = new StringBuilder();
-						for (Entry<String, String> mapData : datosDeExcel.get(rowNumber).entrySet()) {
-							if (dataVectorRango == null) {
-								allCellData.append("	|	" + mapData.getValue());
-							} else {
-								if (esRangoDefinido) {
-									if (rowNumber < Integer.parseInt(dataVectorRango[1])) {
-										allCellData.append("	|	" + mapData.getValue());
-									}
-								} else {
-									if (rowNumber + 1 == Integer.parseInt(dataVectorRango[pos]) && esUnRango) {
-										allCellData.append("	|	" + mapData.getValue());
-									}
-								}
-							}
-						}
-						datosDelFeature.add(allCellData.toString() + "	|");
-						if (!esUnRango && !esRangoDefinido) {
-								rowNumber = datosDeExcel.size();
-						}
-						if (esMultiple) {
-							if (pos + 1 < dataVectorRango.length) {
-								filaSeleccionada = Integer.parseInt(dataVectorRango[pos + 1]) - 1;
-								rowNumber = filaSeleccionada - 1;
-								pos++;
-							} else {
-								rowNumber = datosDeExcel.size() - 1;
-							}
-						}
-						if (esRangoDefinido) {
-							if (rowNumber + 1 == Integer.parseInt(dataVectorRango[1])) {
-								rowNumber = datosDeExcel.size() - 1;
-								pos++;
-							} else {
-								pos++;
-							}
-						}
-					}*/
+					//agregarFilasEspecificasDelExcelAlFeature();
+					agregarTodasLasFilasDelExcelAlFeature();
+
 					etiquetaEncontrada = false;
 					omitirFilaDelFeature = true;//Se omite la siguiente fila
 				} else 	if ( filaDelFeature.trim().startsWith("|") && filaDelFeature.trim().endsWith("|") && !omitirFilaDelFeature) {
@@ -148,8 +111,8 @@ public class DataToFeatureV2 {
 			sheetName = dataVector[3];
 			if (dataVector.length == 4) {
 				esUnRango = true;
-			}
-			if (dataVector.length == 5) {
+
+			} else if (dataVector.length == 5) {
 				if (dataVector[4].contains("-")) {
 					dataVectorRango = dataVector[4].trim().split("-");
 					esRangoDefinido = true;
@@ -213,8 +176,15 @@ public class DataToFeatureV2 {
 		}
 	}
 
-	private static void agregarTodasLasFilasDelExcelAlFeature(){
+	private static void agregarTodasLasFilasDelExcelAlFeature() {
+		for (int rowNumber = 0; rowNumber < datosDeExcel.size() - 1; rowNumber++) {
+			StringBuilder allCellData = new StringBuilder();
+			for (Entry<String, String> mapData : datosDeExcel.get(rowNumber).entrySet()) {
+				allCellData.append("	|	" + mapData.getValue());
+			}
+			datosDelFeature.add(allCellData.toString() + "	|");
 
+		}
 	}
 
 	/**
