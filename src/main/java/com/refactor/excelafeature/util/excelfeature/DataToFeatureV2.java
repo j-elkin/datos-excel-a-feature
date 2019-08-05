@@ -11,7 +11,7 @@ import java.util.Map.Entry;
 import java.util.logging.Logger;
 
 /**
- * Ingresa los datosDelFeature obtenidos del archivo de Excel al archivo feature del cual
+ * Ingresa los datos obtenidos del archivo de Excel al archivo feature del cual
  * se está llamando
  * 
  * @since 27/11/2017
@@ -22,10 +22,10 @@ public class DataToFeatureV2 {
 
 	private static final Logger LOGGER = Logger.getLogger(DataToFeatureV2.class.getName());
 
-	private static String datosDelFeature;
+	private static String filaDelFeature;
 	private static List<Map<String, String>> datosDeExcel = null;
 	private static boolean etiquetaEncontrada = false;
-	private static boolean featureData = false;
+	private static boolean omitirFilaDelFeature = false;
 	private static boolean esUnRango = false;
 	private static boolean esMultiple = false;
 	private static boolean esRangoDefinido = false;
@@ -37,7 +37,7 @@ public class DataToFeatureV2 {
 	private static int filaSeleccionada;
 	private static int pos = 0;
 
-	private static List<String> datosParaAgregarAlFeature = new ArrayList<String>();
+	private static List<String> datosDelFeature = new ArrayList<String>();
 
 
 	private DataToFeatureV2(){
@@ -45,7 +45,7 @@ public class DataToFeatureV2 {
 	}
 
 	/**
-	 * Ingresa los datosDelFeature obtenidos de un excel al archivo .feature del cual se está
+	 * Ingresa los datos obtenidos de un excel al archivo .feature del cual se está
 	 * llamando, hace que se genere la tabla en el escenario Outline como Data Table
 	 * 
 	 * @since 27/11/2017
@@ -63,7 +63,7 @@ public class DataToFeatureV2 {
 		try (BufferedReader buffReader = new BufferedReader(
 				new InputStreamReader(new BufferedInputStream(new FileInputStream(featureFile)), "UTF-8"))) {
 
-			while ((datosDelFeature = buffReader.readLine()) != null) {
+			while ((filaDelFeature = buffReader.readLine()) != null) {
 				dataVector = null;
 				dataVectorRango = null;
 				sheetName = null;
@@ -80,20 +80,20 @@ public class DataToFeatureV2 {
 						StringBuilder allCellData = new StringBuilder();
 						for (Entry<String, String> mapData : datosDeExcel.get(rowNumber).entrySet()) {
 							if (dataVectorRango == null) {
-								allCellData.append("   |" + mapData.getValue());
+								allCellData.append("	|	" + mapData.getValue());
 							} else {
 								if (esRangoDefinido) {
 									if (rowNumber < Integer.parseInt(dataVectorRango[1])) {
-										allCellData.append("   |" + mapData.getValue());
+										allCellData.append("	|	" + mapData.getValue());
 									}
 								} else {
 									if (rowNumber + 1 == Integer.parseInt(dataVectorRango[pos]) && esUnRango) {
-										allCellData.append("   |" + mapData.getValue());
+										allCellData.append("	|	" + mapData.getValue());
 									}
 								}
 							}
 						}
-						datosParaAgregarAlFeature.add(allCellData.toString() + "|");
+						datosDelFeature.add(allCellData.toString() + "	|");
 						if (!esUnRango && !esRangoDefinido) {
 								rowNumber = datosDeExcel.size();
 						}
@@ -116,21 +116,12 @@ public class DataToFeatureV2 {
 						}
 					}
 					etiquetaEncontrada = false;
-					featureData = true;
-					//continue;
-				} else 	if ( datosDelFeature.startsWith("|") && datosDelFeature.endsWith("|") && !featureData) {
-					/*if (featureData) {
-						continue;
-					} else {
-						datosParaAgregarAlFeature.add(datosDelFeature);
-						continue;
-					}
-				} else {*/
-					featureData = false;
-					datosParaAgregarAlFeature.add(datosDelFeature);
-				} else if(!featureData) {
-
-					datosParaAgregarAlFeature.add(datosDelFeature);
+					omitirFilaDelFeature = true;//Se omite la siguiente fila
+				} else 	if ( filaDelFeature.trim().startsWith("|") && filaDelFeature.trim().endsWith("|") && !omitirFilaDelFeature) {
+					datosDelFeature.add(filaDelFeature);
+				} else if( !filaDelFeature.trim().startsWith("|") && !filaDelFeature.trim().endsWith("|") ) {
+					datosDelFeature.add(filaDelFeature);
+					omitirFilaDelFeature = false;
 				}
 
 
@@ -144,13 +135,13 @@ public class DataToFeatureV2 {
 		} catch (InvalidFormatException e) {
 			LOGGER.severe(LoggerApp.getStackTrace(e));
 		}
-		return datosParaAgregarAlFeature;
+		return datosDelFeature;
 	}
 
 
 	private static void determinarRangoDeFilasDelExcelALeer(){
-		if (datosDelFeature.trim().contains("##@externaldata")) {
-			dataVector = datosDelFeature.trim().split("@");
+		if (filaDelFeature.trim().contains("##@externaldata")) {
+			dataVector = filaDelFeature.trim().split("@");
 			excelFilePath = dataVector[2];
 			sheetName = dataVector[3];
 			if (dataVector.length == 4) {
@@ -171,7 +162,7 @@ public class DataToFeatureV2 {
 				}
 			}
 			etiquetaEncontrada = true;
-			datosParaAgregarAlFeature.add(datosDelFeature);
+			datosDelFeature.add(filaDelFeature);
 		}
 	}
 
