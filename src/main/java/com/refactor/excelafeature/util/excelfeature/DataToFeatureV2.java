@@ -76,7 +76,8 @@ public class DataToFeatureV2 {
 				if (etiquetaEncontrada) {
 					datosDeExcel = new LectorExcel().getData(excelFilePath, sheetName);
 					//agregarUnaFilaAlFeatureDesdeElExcel();
-					agregarUnRangoDeFilasAlFeatureDesdeElExcel();
+					//agregarUnRangoDeFilasAlFeatureDesdeElExcel();
+					agregarFilasEspecificasAlFeatureDesdeElExcel();
 					/*for (int rowNumber = filaSeleccionada; rowNumber < datosDeExcel.size() - 1; rowNumber++) {
 						StringBuilder allCellData = new StringBuilder();
 						for (Entry<String, String> mapData : datosDeExcel.get(rowNumber).entrySet()) {
@@ -157,7 +158,7 @@ public class DataToFeatureV2 {
 					dataVectorRango = dataVector[4].trim().split(",");
 					esUnRango = true;
 					esMultiple = true;
-					filaSeleccionada = Integer.parseInt(dataVectorRango[pos]) - 1;
+					filaSeleccionada = Integer.parseInt(dataVectorRango[0]) - 1;
 				} else {
 					filaSeleccionada = Integer.parseInt(dataVector[4]) - 1;
 
@@ -168,7 +169,7 @@ public class DataToFeatureV2 {
 		}
 	}
 
-	public static void agregarUnaFilaAlFeatureDesdeElExcel(){
+	private static void agregarUnaFilaAlFeatureDesdeElExcel(){
 		StringBuilder allCellData = new StringBuilder();
 		for (Entry<String, String> mapData : datosDeExcel.get(filaSeleccionada).entrySet()) {
 			allCellData.append("	|	" + mapData.getValue());
@@ -176,7 +177,7 @@ public class DataToFeatureV2 {
 		datosDelFeature.add(allCellData.toString() + "	|");
 	}
 
-	public static void agregarUnRangoDeFilasAlFeatureDesdeElExcel(){
+	private static void agregarUnRangoDeFilasAlFeatureDesdeElExcel(){
 		for (int rowNumber = filaSeleccionada; rowNumber < datosDeExcel.size() - 1; rowNumber++) {
 			StringBuilder allCellData = new StringBuilder();
 			for (Entry<String, String> mapData : datosDeExcel.get(rowNumber).entrySet()) {
@@ -187,6 +188,26 @@ public class DataToFeatureV2 {
 			datosDelFeature.add(allCellData.toString() + "	|");
 
 			if (rowNumber + 1 == Integer.parseInt(dataVectorRango[1])) {
+				rowNumber = datosDeExcel.size() - 1;
+			}
+		}
+	}
+
+	private static void agregarFilasEspecificasAlFeatureDesdeElExcel(){
+		for (int rowNumber = filaSeleccionada; rowNumber < datosDeExcel.size() - 1; rowNumber++) {
+			StringBuilder allCellData = new StringBuilder();
+			for (Entry<String, String> mapData : datosDeExcel.get(rowNumber).entrySet()) {
+				if (rowNumber + 1 == Integer.parseInt(dataVectorRango[pos]) ) {
+					allCellData.append("	|	" + mapData.getValue());
+				}
+			}
+			datosDelFeature.add(allCellData.toString() + "	|");
+
+			if (pos + 1 < dataVectorRango.length) {
+				filaSeleccionada = Integer.parseInt(dataVectorRango[pos + 1]) - 1;
+				rowNumber = filaSeleccionada - 1;
+				pos++;
+			} else {
 				rowNumber = datosDeExcel.size() - 1;
 			}
 		}
