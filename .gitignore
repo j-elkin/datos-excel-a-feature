@@ -28,6 +28,15 @@ hs_err_pid*
 
 ###==================================
 
+# Intellij
+.idea/
+out/
+# Gradle
+.gradle/
+#gradle/
+#gradlew.bat
+#gradlew
+
 #log automation
 bitacoraApp.*
 automationApp.*
@@ -37,15 +46,6 @@ target/
 #SonarQube Local
 .scannerwork/
 
-# Intellij
-.idea/
-out/
-
-# Gradle
-.gradle/
-#gradle/
-#gradlew.bat
-#gradlew
 
 # Ignore Gradle GUI config
 gradle-app.setting
