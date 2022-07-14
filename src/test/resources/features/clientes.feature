@@ -2,8 +2,8 @@
 
 Característica: Cargar datos de un archivo excel a un archivo feature
   Como programador
-   Quiero refactorizar la carga de datos de excel a un feature
-   Para reducir la deuda tecnica reportada por Sonar
+  Quiero refactorizar la carga de datos de excel a un feature
+  Para reducir la deuda tecnica reportada por Sonar
 
   Esquema del escenario: realizar la carga de datos de excel hacia el feature
     Dado realiza el ingreso del cliente

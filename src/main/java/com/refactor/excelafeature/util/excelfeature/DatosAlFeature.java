@@ -2,7 +2,15 @@ package com.refactor.excelafeature.util.excelfeature;
 
 import com.refactor.excelafeature.util.LoggerApp;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -155,7 +163,8 @@ public class DatosAlFeature {
 	}
 
 	private void agregarFilasEspecificasDelExcelAlFeature(){
-		for (int numeroFila = filaSeleccionada; numeroFila < datosDeExcel.size() - 1; numeroFila++) {
+		int numeroFila;
+		for (numeroFila = filaSeleccionada; numeroFila < datosDeExcel.size() - 1; numeroFila++) {
 			StringBuilder valoresDeLaFila = new StringBuilder();
 			for (Entry<String, String> valorCelda : datosDeExcel.get(numeroFila).entrySet()) {
 				if (numeroFila + 1 == Integer.parseInt(dataVectorRango[pos]) ) {
