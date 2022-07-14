@@ -28,10 +28,6 @@ hs_err_pid*
 
 ###==================================
 
-## AmbientesBC & AS400 connection 
-#ambientesBC.properties
-#dbconfig.properties
-
 #log automation
 bitacoraApp.*
 automationApp.*
@@ -48,7 +44,6 @@ out/
 # Gradle
 .gradle/
 #gradle/
-/ManualTest/build/
 #gradlew.bat
 #gradlew
 
@@ -60,10 +55,6 @@ gradle-app.setting
 
 
 build/
-#no ignorar:
-!build\tmp\jar\MANIFEST.MF
-!build\libs\AperturaCuentasAhorro-1.0.jar
-!build\libs\AperturaCuentasAhorrosSucursales-1.0.jar
 
 #no ignorar:
 #!build\tmp\jar\MANIFEST.MF
@@ -138,3 +129,6 @@ local.properties
 
 ### VisualStudioCode ###
 .vscode/
+
+### MAC Files ###
+.DS_Store
